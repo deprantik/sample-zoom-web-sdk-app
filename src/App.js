@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
+//please set the zoom webinar id, password and apikey and api secret in the signature.js file
+
+export default class App extends Component {
 
   constructor(props) {
     super(props);
@@ -33,13 +35,9 @@ class App extends Component {
             Learn React
           </a>
         </header>
-        <body>
           {Component ?
             <Component /> : null}
-        </body>
       </div>
     );
   }
 }
-
-export default App;
